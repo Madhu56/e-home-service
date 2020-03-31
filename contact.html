@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>E-Commerce</title>
+		<meta name= viewport content= "width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+	<link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: 'Flamenco', cursive;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container5 {
+    margin-left: 470px;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  width: 50%;
+  margin-top: 6px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+	
+	
+</head>
+<body>
+
+	<header>
+			<nav>
+			<div class="row clearfix">
+				<a href="index.html"><img src="images/logo2.png" class="logo"></a>
+
+				<ul class="main-nav animated slideInDown" id="check-class">
+					<li><a href="index.html">home</a></li>
+					<li><a href="services.html">services</a></li>
+					<li><a href="contact.html">contact us</a></li>
+					<li><a href="index.html">Sign Out</a></li>
+				</ul>
+				<a href="#" class="mobile-icon"  onclick="slideshow()"> <i class="fa fa-bars"></i> </a>
+			</div>
+		</nav>
+
+		<div class="container5">
+    <h2>Contact Us</h2>
+  <div style="text-align:center">
+   </div>
+
+    <div class="column">
+      <form action="index.html">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <input type="text" id="country" name="country" placeholder="Enter your country">
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+</div>
+        
+	</header>
+
+	<script type="text/javascript">
+		
+		function slideshow(){
+			 var x = document.getElementById('check-class');
+			 if(x.style.display === "none"){
+			 	x.style.display="block";
+			 }else{
+			 	x.style.display="none";
+			 }
+		}	
+
+	</script>
+
+<footer>
+    <div class="search-text"> 
+        <div class="container">
+            <div class="row text-center">
+             
+               <div class="form">
+                   <h4>SIGN UP TO OUR NEWSLETTER</h4>
+                    <form id="search-form" class="form-search form-horizontal">
+                        <input type="text" class="input-search" placeholder="Email Address">
+                        <button type="submit" class="btn-search">SUBMIT</button>
+                    </form>
+                </div>
+            
+            </div>         
+        </div>     
+    </div>
+    <div class="container" style="border-top:1px solid grey;">
+        <div class="row text-center">   
+            <div class="col-lg-6 col-lg-offset-3">
+                  <ul class="menu">
+                             
+                         <li>
+                            <a href="index.html">Home</a>
+                          </li>
+                               
+                          <li>
+                             <a href="services.html">Services</a>
+                          </li>
+                          <li>
+                            <a href="contact.html">Contact Us</a>
+                         </li>
+               
+                    </ul>
+            </div><br />  <div class="copyright">
+         <div class="row text-center">
+         	<p>Copyright © 2019 All rights reserved</p>
+         </div>
+         
+ 	   </div>
+    </div>
+    
+    <a href="#" id="top" style="display: inline;">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+    
+        </div>
+	
+</footer>
+    
+
+</body>
+</html>
